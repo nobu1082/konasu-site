@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: 'Zen Maru Gothic', 'Hiragino Sans', sans-serif;
+  background: #faf8fc;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* 紫を基調に */
+:root {
+  --main-purple: #b39ddb; /* 優しい藤色 */
+  --dark-purple: #7e57c2;
+}
+
+header {
+  background: var(--dark-purple);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 420px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* 写真をフェードさせるための背景レイヤー */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+}
+
+.hero-bg.active {
+  opacity: 1;
+}
+
+/* 紫のグラデーションを重ねる */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(150, 120, 200, 0.45),
+    rgba(200, 180, 230, 0.15)
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 左上ぼかし（after に変更） */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom-right-radius: 80px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  /* text-align: center; */
+  text-shadow: 0 2px 6px rgba(3, 3, 3, 0.4); /* 文字を読みやすく */
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2,
+.menu-name {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* シンプルメニューのスタイル */
+.simple-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.simple-menu li {
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  border-left: 6px solid var(--main-purple); /* 紫のアクセント */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+.simple-menu li:hover {
+  background: #f4eefc; /* ほんのり紫がかった背景に変化 */
+}
+
+.menu-name {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark-purple); /* 文字にも紫を使用 */
+  margin-bottom: 4px;
+}
+
+.menu-desc {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+/* アクセス補足情報（バッジ） */
+.access-info {
+  margin: 20px 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  background: var(--main-purple);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* マップ枠 */
+.map-wrapper {
+  margin-top: 10px;
+  border: 3px solid var(--main-purple);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #4a3b6a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* スマホ向け調整 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 40px 16px;
+  }
+
+  .simple-menu li {
+    padding: 14px 16px;
+  }
+
+  .menu-name {
+    font-size: 1.1rem;
+  }
+
+  .menu-desc {
+    font-size: 0.85rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .map-wrapper {
+    border-width: 2px;
+  }
+}
