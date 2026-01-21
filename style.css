@@ -116,6 +116,20 @@ header nav a {
   margin: auto;
 }
 
+.section-divider {
+  text-align: center;
+  margin: 0 10px;
+  position: relative;
+  top: 60px; /*下に60pxずらす*/
+}
+
+.section-divider img {
+  width: 55px;
+  margin: 0 18px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
 h2,
 .menu-name {
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -222,6 +236,11 @@ footer {
 
   .section {
     padding: 40px 16px;
+  }
+
+  .section-divider img {
+    width: 45px;
+    margin: 0 4px;
   }
 
   .simple-menu li {
