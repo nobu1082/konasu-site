@@ -217,6 +217,7 @@ footer {
 
   .hero-text p {
     font-size: 1rem;
+    margin-left: 1em; /* 右に1マス分ずらす */
   }
 
   .section {
