@@ -17,6 +17,14 @@ header {
   color: #fff;
   padding: 15px;
   text-align: center;
+  /* ここから藤色の水玉（淡い） */
+  background-image:
+    radial-gradient(rgba(179, 157, 219, 0.35) 12%, transparent 13%),
+    radial-gradient(rgba(179, 157, 219, 0.35) 12%, transparent 13%);
+  background-size: 50px 50px;
+  background-position:
+    0 0,
+    30px 30px;
 }
 
 header h1 {
