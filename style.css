@@ -156,6 +156,24 @@ h2,
   letter-spacing: 0.03em;
 }
 
+.about-intro {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-intro p {
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.nasu-icon {
+  width: 48px;
+  display: block;
+  margin: 0 auto 16px;
+  opacity: 0.9;
+}
+
 /* シンプルメニューのスタイル */
 .simple-menu {
   list-style: none;
@@ -293,5 +311,17 @@ footer {
   .shop-photos img {
     width: 100%;
     border-radius: 12px;
+  }
+
+  @media (max-width: 600px) {
+    .about-intro p {
+      line-height: 2.1;
+      padding: 0 6px;
+    }
+
+    .nasu-icon {
+      width: 42px;
+      margin-bottom: 14px;
+    }
   }
 }

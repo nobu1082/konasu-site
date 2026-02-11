@@ -10,11 +10,13 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
       <h1>和味の店 小なす</h1>
       <nav>
         <ul>
+          <li><a href="#atmosphere">店内の雰囲気</a></li>
           <li><a href="#about">お店について</a></li>
           <li><a href="#menu">おすすめメニュー</a></li>
           <li><a href="#access">アクセス</a></li>
@@ -22,6 +24,7 @@
       </nav>
     </header>
 
+    <!-- ヒーロー -->
     <section class="hero">
       <div class="hero-text">
         <h2>移転　リニューアル</h2>
@@ -29,50 +32,7 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <h2>お店について</h2>
-      <p>
-        　小なすは、昭和町の交差点で23年以上、<br />
-        地元の方々に愛されてきたお店です。<br />
-        おひとりでも、ふらりと立ち寄れ、<br />
-        寛げる安心感を大切にしてきました。<br />
-        　道路拡張工事により場所は変わりましたが、<br />
-        思いはそのままに、皆さまをお待ちしております。<br />
-      </p>
-
-      <div class="section-divider">
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-      </div>
-    </section>
-
-    <section id="menu" class="section">
-      <h2>おすすめメニュー</h2>
-
-      <p>
-        新鮮なお刺身や、天婦羅、一品料理を<br />
-        数多くご用意しております。<br />
-      </p>
-
-      <ul class="menu-list simple-menu">
-        <li>
-          <span class="menu-name">新鮮なお刺身盛り合わせ</span>
-          <span class="menu-desc"> 写真を載せる？？ </span>
-        </li>
-      </ul>
-
-      <div class="section-divider">
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-        <img src="images/nasu-divider.png" alt="区切りナス" />
-      </div>
-    </section>
-
+    <!-- ★ 冒頭に追加：店内の雰囲気 -->
     <section id="atmosphere" class="section">
       <h2>店内の雰囲気</h2>
 
@@ -101,13 +61,71 @@
       </div>
     </section>
 
+    <!-- お店について -->
+    <section id="about" class="section">
+      <h2>お店について</h2>
+
+      <div class="about-intro">
+        <img
+          src="images/nasu-divider.png"
+          alt="小なすアイコン"
+          class="nasu-icon"
+        />
+
+        <p>
+          　小なすは、昭和町の交差点で23年以上、<br />
+          地元の方々に愛されてきたお店です。<br />
+          おひとりでも、ふらりと立ち寄れ、<br />
+          寛げる安心感を大切にしてきました。
+        </p>
+
+        <p>
+          　道路拡張工事により場所は変わりましたが、<br />
+          思いはそのままに、皆さまをお待ちしております。
+        </p>
+      </div>
+
+      <div class="section-divider">
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+      </div>
+    </section>
+
+    <!-- メニュー -->
+    <section id="menu" class="section">
+      <h2>おすすめメニュー</h2>
+
+      <p>
+        新鮮なお刺身や、天婦羅、一品料理を<br />
+        数多くご用意しております。<br />
+      </p>
+
+      <ul class="menu-list simple-menu">
+        <li>
+          <span class="menu-name">新鮮なお刺身盛り合わせ</span>
+          <span class="menu-desc"> 写真を載せる？？ </span>
+        </li>
+      </ul>
+
+      <div class="section-divider">
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+        <img src="images/nasu-divider.png" alt="区切りナス" />
+      </div>
+    </section>
+
+    <!-- アクセス -->
     <section id="access" class="section">
       <h2>アクセス</h2>
       <p>宮崎県宮崎市吉村町〇-〇-〇</p>
-      <p>営業時間：17:30〜23:00　(オーダーストップ22:00)</p>
+      <p>営業時間：17:30〜23:00（オーダーストップ22:00）</p>
       <p>電話番号：000-0000-0000</p>
 
-      <!-- アクセス補足情報 -->
       <div class="access-info">
         <span class="badge">敷地内駐車場あり</span>
         <span class="badge">宮崎地区交流センターから徒歩1分</span>
@@ -125,6 +143,7 @@
         ></iframe>
       </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
