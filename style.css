@@ -125,7 +125,9 @@ header nav a {
 }
 
 .section-divider {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
   margin: 0 10px;
   position: relative;
   top: 60px; /*下に60pxずらす*/
@@ -287,6 +289,10 @@ footer {
 
   .section {
     padding: 40px 16px;
+  }
+
+  .section-divider {
+    gap: 6px;
   }
 
   .section-divider img {
