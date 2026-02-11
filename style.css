@@ -192,7 +192,8 @@ h2,
 }
 
 .simple-menu img {
-  width: 60%;
+  max-width: 100%;
+  height: auto;
   border-radius: 12px;
   display: block;
   margin: 12px auto 0;
@@ -273,7 +274,7 @@ footer {
   }
 
   .hero-text {
-    text-align: center; /* ← 中央寄せに */
+    text-align: center;
   }
 
   .hero-text h2 {
@@ -281,7 +282,7 @@ footer {
   }
 
   .hero-text p {
-    margin-left: 0; /* ← 右寄せを解除 */
+    margin-left: 0;
   }
 
   .section {
@@ -294,6 +295,11 @@ footer {
 
   .simple-menu li {
     padding: 14px 16px;
+  }
+
+  /* ← ここが超重要！ */
+  .simple-menu img {
+    width: 100%;
   }
 
   .menu-name {
@@ -312,6 +318,7 @@ footer {
   .map-wrapper {
     border-width: 2px;
   }
+
   .shop-photos {
     flex-direction: column;
   }
@@ -321,15 +328,13 @@ footer {
     border-radius: 12px;
   }
 
-  @media (max-width: 600px) {
-    .about-intro p {
-      line-height: 2.1;
-      padding: 0 6px;
-    }
+  .about-intro p {
+    line-height: 2.1;
+    padding: 0 6px;
+  }
 
-    .nasu-icon {
-      width: 42px;
-      margin-bottom: 14px;
-    }
+  .nasu-icon {
+    width: 42px;
+    margin-bottom: 14px;
   }
 }
