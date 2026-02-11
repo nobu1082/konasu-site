@@ -115,6 +115,7 @@ header nav a {
 
 .hero-text p {
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .section {
