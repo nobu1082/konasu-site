@@ -292,11 +292,13 @@ footer {
   }
 
   .section-divider {
-    gap: 6px;
+    gap: 14px;
+    margin-top: 20px;
   }
 
   .section-divider img {
-    width: 38px;
+    width: 48px;
+    opacity: 0.9;
   }
 
   .simple-menu li {
