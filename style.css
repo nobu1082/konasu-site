@@ -292,12 +292,14 @@ footer {
   }
 
   .section-divider {
+    width: 100%; /* ← これが超重要！ */
+    justify-content: center;
     gap: 14px;
     margin-top: 20px;
-    justify-content: center;
   }
 
   .section-divider img {
+    margin: 0 10px;
     width: 48px;
     opacity: 0.9;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
