@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>和味の店 小なす</title>
+    <meta
+      name="description"
+      content="和味の店 小なすは、宮崎市で23年以上愛されてきたお店です。
+    季節の料理と落ち着いた店内で、ゆったりとした時間をお過ごしください。"
+    />
+    <title>和味の店 小なす｜宮崎市の季節料理と落ち着いた空間</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap"
@@ -14,7 +19,7 @@
   <body>
     <header>
       <h1>和味の店 小なす</h1>
-      <nav>
+      <nav aria-label="メインメニュー">
         <ul>
           <li><a href="#about">お店について</a></li>
           <li><a href="#atmosphere">店内の雰囲気</a></li>
@@ -64,9 +69,18 @@
       <h2>店内の雰囲気</h2>
 
       <div class="shop-photos">
-        <img src="images/shop1.jpg" alt="店内カウンターの写真" />
-        <img src="images/shop2.jpg" alt="テーブル席の写真" />
-        <img src="images/shop3.jpg" alt="店内の雰囲気写真" />
+        <img
+          src="images/shop1.jpg"
+          alt="宮崎市 和味の店 小なすの店内カウンターの写真"
+        />
+        <img
+          src="images/shop2.jpg"
+          alt="宮崎市 和味の店 小なすのテーブル席の写真"
+        />
+        <img
+          src="images/shop3.jpg"
+          alt="宮崎市 和味の店 小なすの店内の雰囲気写真"
+        />
       </div>
 
       <p>
@@ -143,5 +157,27 @@
     </section>
 
     <script src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "和味の店 小なす",
+        "image": "トップで使いたい代表写真の URL　https://example.com/images/shop1.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "吉村町中原甲2680-1",
+          "addressLocality": "宮崎市",
+          "addressRegion": "宮崎県",
+          "postalCode": "",
+          "addressCountry": "JP"
+        },
+        "telephone": "0985-27-7057",
+        "url": "https://nobu1082.github.io/konasu-site/",
+        "openingHours": "Mo-Su 17:30-23:00",
+        "servesCuisine": "和食",
+        "priceRange": "¥¥",
+        "description": "和味の店 小なすは、宮崎市吉村町で23年以上愛されてきた和食店です。季節の料理と落ち着いた店内で、ゆったりとした時間をお過ごしください。"
+      }
+    </script>
   </body>
 </html>
