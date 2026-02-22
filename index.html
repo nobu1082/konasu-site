@@ -168,21 +168,40 @@
         "@context": "https://schema.org",
         "@type": "Restaurant",
         "name": "和味の店 小なす",
-        "image": "https://nobu1082.github.io/konasu-site/images/kanban.jpg",
+        "image": [
+          "https://nobu1082.github.io/konasu-site/images/kanban.jpg",
+          "https://nobu1082.github.io/konasu-site/images/counter.JPG",
+          "https://nobu1082.github.io/konasu-site/images/table.JPG"
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "吉村町中原甲2680-1",
           "addressLocality": "宮崎市",
           "addressRegion": "宮崎県",
-          "postalCode": "",
+          "postalCode": "880-0841",
           "addressCountry": "JP"
         },
         "telephone": "0985-27-7057",
         "url": "https://nobu1082.github.io/konasu-site/",
-        "openingHours": "Mo-Su 17:30-23:00",
+
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Tuesday",
+              "Wednesday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "17:30",
+            "closes": "23:00"
+          }
+        ],
+
         "servesCuisine": "和食",
-        "priceRange": "¥¥",
-        "description": "和味の店 小なすは、宮崎市で23年以上愛されてきた居酒屋です。季節の料理と落ち着いた店内で、ゆったりとした時間をお過ごしください。"
+        "priceRange": "¥3000-¥7000",
+        "description": "和味の店 小なすは、宮崎市で23年以上愛されてきた居酒屋です。季節の料理と落ち着いた店内で、ゆったりとした時間をお過ごしください。オーダーストップは22:00です。"
       }
     </script>
 
