@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const images = [
-    'images/renewal-bg1.jpg',
-    'images/renewal-bg2.jpg',
-    'images/renewal-bg3.jpg',
+    'images/renewal-bg1.JPG',
+    'images/renewal-bg2.JPG',
+    'images/renewal-bg3.JPG',
+    'images/renewal-bg4.JPG',
+    'images/renewal-bg5.JPG',
   ];
 
   const hero = document.querySelector('.hero');
