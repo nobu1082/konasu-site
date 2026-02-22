@@ -259,6 +259,16 @@ footer {
   padding: 15px;
 }
 
+.photo-vertical img {
+  width: 100%;
+  height: auto;
+  max-height: 800px; /* 好みで調整可能 */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 24px; /* 写真の間の余白 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 /* スマホ向け調整 */
 @media (max-width: 600px) {
   header h1 {
