@@ -203,6 +203,14 @@ h2,
   margin-bottom: 6px;
 }
 
+.menu-small {
+  width: 80%; /* ← お好みで 70〜90% に調整できる */
+  max-width: 260px; /* ← PCで大きくなりすぎないように */
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 12px;
+}
+
 .simple-menu li:hover {
   background: #f4eefc; /* ほんのり紫がかった背景に変化 */
 }
