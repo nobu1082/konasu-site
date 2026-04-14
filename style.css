@@ -204,7 +204,7 @@ h2,
 }
 
 .menu-small {
-  width: 80%; /* ← お好みで 70〜90% に調整できる */
+  width: 60%; /* ← お好みで 70〜90% に調整できる */
   max-width: 260px; /* ← PCで大きくなりすぎないように */
   display: block;
   margin: 12px auto 0;
