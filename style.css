@@ -57,6 +57,11 @@ header nav a {
   overflow: hidden;
 }
 
+.hero h2 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
 /* 写真をフェードさせるための背景レイヤー */
 .hero-bg {
   position: absolute;
